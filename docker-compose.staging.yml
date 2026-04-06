@@ -1,0 +1,73 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7
+    container_name: krishisarthi_mongo_staging
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USER:-admin}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD:-staging123}
+      MONGO_INITDB_DATABASE: krishiai_staging
+    ports:
+      - "27018:27017"
+    volumes:
+      - mongodb_staging_data:/data/db
+    networks:
+      - krishisarthi_staging
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: krishisarthi_backend_staging
+    environment:
+      NODE_ENV: staging
+      PORT: 5001
+      MONGODB_URI: mongodb://${MONGO_ROOT_USER:-admin}:${MONGO_ROOT_PASSWORD:-staging123}@mongodb:27017/krishiai_staging?authSource=admin
+      JWT_SECRET: ${JWT_SECRET:-staging-secret-key}
+      GOOGLE_GENAI_API_KEY: ${GOOGLE_GENAI_API_KEY}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      GROK_API_KEY: ${GROK_API_KEY}
+      CORS_ORIGIN: ${CORS_ORIGIN:-http://staging.yourdomain.com}
+    ports:
+      - "5001:5000"
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    networks:
+      - krishisarthi_staging
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: krishisarthi_frontend_staging
+    environment:
+      REACT_APP_API_URL: ${REACT_APP_API_URL:-http://localhost:5001}
+      NODE_ENV: staging
+    ports:
+      - "3001:3000"
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    networks:
+      - krishisarthi_staging
+    restart: unless-stopped
+
+volumes:
+  mongodb_staging_data:
+
+networks:
+  krishisarthi_staging:
+    driver: bridge
