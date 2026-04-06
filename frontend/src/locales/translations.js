@@ -409,7 +409,7 @@ const translations = {
     seeds: "Seeds",
     labor: "Labor",
     profitAnalysisPlaceholder: "Enter your budget and farm details to reveal actionable financial insights.",
-    costLabel: "Cost",
+    costAnalysis: "Cost",
     revenue: "Revenue",
     profit: "Profit",
 
@@ -867,7 +867,7 @@ const translations = {
     seeds: "बीज",
     labor: "श्रम",
     profitAnalysisPlaceholder: "कार्रवाई योग्य वित्तीय अंतर्दृष्टि प्रकट करने के लिए अपना बजट और खेत का विवरण दर्ज करें।",
-    costLabel: "लागत",
+    costAnalysis: "लागत",
     revenue: "राजस्व",
     profit: "लाभ",
 
@@ -1341,7 +1341,7 @@ const translations = {
     seeds: "બીજ",
     labor: "મજૂરી",
     profitAnalysisPlaceholder: "કાર્યક્ષમ નાણાકીય આંતરદ્રષ્ટિ જોવા માટે તમારું બજેટ અને ખેતરની વિગતો દાખલ કરો.",
-    costLabel: "ખર્ચ",
+    costAnalysis: "ખર્ચ",
     revenue: "મહેસૂલ",
     profit: "નફો",
 

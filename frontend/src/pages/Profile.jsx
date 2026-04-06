@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
-import { useLanguage } from '../context/LanguageContext';
-import translations from '../locales/translations';
 import api from '../services/api';
 import { 
   User, 
@@ -24,7 +22,6 @@ import '../styles/Utilities.css';
 
 function Profile() {
   const { user, logout, isLoggedIn } = useAuth();
-  const { language } = useLanguage();
 
   const [history, setHistory] = useState([]);
   const [loading, setLoading] = useState(true);
