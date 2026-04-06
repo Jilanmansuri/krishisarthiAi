@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
 import { 
-  Sprout, Leaf, CircleDollarSign, Lightbulb, CheckCircle, 
+  Sprout, Lightbulb, 
   Sparkles, ShieldCheck, AlertTriangle, TrendingUp, Info, 
-  MapPin, Phone, Building2, Landmark, HelpCircle, Calendar, Droplets, ArrowRight
+  HelpCircle, ArrowRight
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import translations from '../locales/translations';

@@ -226,7 +226,7 @@ const translations = {
     selectUsageLevel: "Select usage level",
     selectAvailability: "Select availability",
     selectSeason: "Select season",
-    selectState: "Select state",
+    selectStateForm: "Select state",
     
     // Additional Navigation
     pulses: "🫘 Pulses",
@@ -409,7 +409,7 @@ const translations = {
     seeds: "Seeds",
     labor: "Labor",
     profitAnalysisPlaceholder: "Enter your budget and farm details to reveal actionable financial insights.",
-    cost: "Cost",
+    costLabel: "Cost",
     revenue: "Revenue",
     profit: "Profit",
 
@@ -662,7 +662,7 @@ const translations = {
     selectUsageLevel: "उपयोग स्तर चुनें",
     selectAvailability: "उपलब्धता चुनें",
     selectSeason: "मौसम चुनें",
-    selectState: "राज्य चुनें",
+    selectStateForm: "राज्य चुनें",
     
     // Additional Navigation
     pulses: "🫘 दालें",
@@ -793,8 +793,8 @@ const translations = {
     OPTIMIZE_WHEAT: "जड़ों के अच्छे विकास के लिए पहली सिंचाई के दौरान फॉस्फोरस डालें।",
 
     // Footer
-    footerCopyright: "© 2024 कृषि साथी एआई - किसानों को स्मार्ट समाधान से सशक्त बनाना",
-    footerContact: "अधिक जानकारी के लिए, अपने स्थानीय कृषि अधिकारी से संपर्क करें",
+    footerCopyright2: "© 2024 कृषि साथी एआई - किसानों को स्मार्ट समाधान से सशक्त बनाना",
+    footerContact2: "अधिक जानकारी के लिए, अपने स्थानीय कृषि अधिकारी से संपर्क करें",
 
     // बैकएंड तर्क और सलाह (Backend Reasoning & Advice)
     REASON_SOIL_MATCH_IDEAL: "आदर्श मिट्टी मिलान: बेहतर जल निकासी और पोषक तत्वों के साथ अनुकूल।",
@@ -867,7 +867,7 @@ const translations = {
     seeds: "बीज",
     labor: "श्रम",
     profitAnalysisPlaceholder: "कार्रवाई योग्य वित्तीय अंतर्दृष्टि प्रकट करने के लिए अपना बजट और खेत का विवरण दर्ज करें।",
-    cost: "लागत",
+    costLabel: "लागत",
     revenue: "राजस्व",
     profit: "लाभ",
 
@@ -1078,14 +1078,14 @@ const translations = {
     failedFetchSchemes: "યોજનાઓ લાવવામાં નિષ્ફળ",
     
     // Ternary Text
-    required: "આવશ્યક",
+    required2: "આવશ્યક",
     optional: "વૈકલ્પિક",
     easyToUseLabel: "ઉપયોગ કરવા માટે સરળ",
     selectCrop: "પાક પસંદ કરો",
     selectUsageLevel: "ઉપયોગ સ્તર પસંદ કરો",
     selectAvailability: "ઉપલબ્ધતા પસંદ કરો",
     selectSeason: "સીઝન પસંદ કરો",
-    selectState: "રાજ્ય પસંદ કરો",
+    selectStateForm: "રાજ્ય પસંદ કરો",
     
     // Additional Navigation
     pulses: "🫘 દાળ",
@@ -1162,11 +1162,11 @@ const translations = {
     tip: "સૂચન",
     
     // Additional form/display elements
-    optional: "વૈકલ્પિક",
+    optional2: "વૈકલ્પિક",
     
     // SoilReportAdvisor keys
     recommendationsFor: "માટે ભલામણો",
-    getRecommendations: "ભલામણો મેળવો",
+    getRecommendations2: "ભલામણો મેળવો",
     nitrogenNLabel: "નાઇટ્રોજન (N)",
     phosphorusLabel: "ફોસ્ફોરસ (P)",
     potassiumLabel: "પોટેશિયમ (K)",
@@ -1267,8 +1267,8 @@ const translations = {
     OPTIMIZE_BAJRA: "જો જૈવિક ખાતર વાપરતા હોવ તો નાઇટ્રોજનમાં 10% ઘટાડો કરો.",
     OPTIMIZE_WHEAT: "મૂળના સારા વિકાસ માટે પ્રથમ પિયત દરમિયાન ફોસ્ફરસ આપો.",
 
-    footerCopyright: "© 2024 કૃષિ સાથી AI - ખેડૂતોને સ્માર્ટ ઉકેલથી સશક્ત બનાવવું",
-    footerContact: "વધુ માહિતી માટે, તમારા સ્થાનિક કૃષિ અધિકારીનો સંપર્ક કરો",
+    footerCopyright2: "© 2024 કૃષિ સાથી AI - ખેડૂતોને સ્માર્ટ ઉકેલથી સશક્ત બનાવવું",
+    footerContact2: "વધુ માહિતી માટે, તમારા સ્થાનિક કૃષિ અધિકારીનો સંપર્ક કરો",
 
     // બેકએન્ડ તર્ક અને સલાહ (Backend Reasoning & Advice)
     REASON_SOIL_MATCH_IDEAL: "આદર્શ માટી જોડણી: શ્રેષ્ઠ ડ્રેનેજ અને પોષક તત્વો સાથે સુસંગત.",
@@ -1341,7 +1341,7 @@ const translations = {
     seeds: "બીજ",
     labor: "મજૂરી",
     profitAnalysisPlaceholder: "કાર્યક્ષમ નાણાકીય આંતરદ્રષ્ટિ જોવા માટે તમારું બજેટ અને ખેતરની વિગતો દાખલ કરો.",
-    cost: "ખર્ચ",
+    costLabel: "ખર્ચ",
     revenue: "મહેસૂલ",
     profit: "નફો",
 

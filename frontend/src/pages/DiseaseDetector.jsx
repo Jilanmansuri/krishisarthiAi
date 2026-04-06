@@ -37,7 +37,6 @@ const DiseaseDetector = ({ t, language }) => {
     try {
       // Map IDs to English labels for backend matching (fallback database is English)
       const symptomsToMatch = selectedSymptoms.map(id => {
-        const item = symptomsList.find(s => s.id === id);
         // We use the English label from the translation file if possible
         // For simplicity in this demo, we'll send the raw IDs which the controller can handle
         // or we map them to the values in our diseaseData.json

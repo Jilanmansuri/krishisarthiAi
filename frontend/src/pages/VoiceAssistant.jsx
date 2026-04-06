@@ -38,7 +38,7 @@ const VoiceAssistant = () => {
     }
 
     window.speechSynthesis.speak(utterance);
-  }, []);
+  }, [language]);
 
   const processVoiceCommand = useCallback(async (text) => {
     const cleaned = String(text || '').trim();
@@ -65,7 +65,7 @@ const VoiceAssistant = () => {
     } finally {
       setIsLoading(false);
     }
-  }, [speakResponse]);
+  }, [speakResponse, t.errorNoInput, t.errorServerConnect]);
 
   useEffect(() => {
     // Initialize Web Speech API
@@ -126,7 +126,7 @@ const VoiceAssistant = () => {
       }
       window.speechSynthesis.cancel();
     };
-  }, [processVoiceCommand]);
+  }, [processVoiceCommand, language, t.errorNoSpeech, t.errorSpeechCapture, t.errorMicPermission, t.errorMicGeneric]);
 
   const toggleListen = () => {
     if (isListening) {

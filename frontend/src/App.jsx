@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { 
-  CircleDollarSign, Lightbulb, CheckCircle, Sprout,
-  MapPin, Phone, Building2, Landmark, ShieldCheck, Sparkles, AlertTriangle, TrendingUp,
-  Globe, ChevronDown, Menu, X, 
-  Leaf, FlaskConical, ScrollText, LineChart, Mic, Home as HomeIcon, CloudSun, Bug, User as UserIcon
+  Sprout,
+  MapPin, Landmark, Sparkles, Globe, ChevronDown, Menu, X, 
+  FlaskConical, ScrollText, LineChart, Mic, Home as HomeIcon, CloudSun, Bug, User as UserIcon
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Home from './pages/Home';

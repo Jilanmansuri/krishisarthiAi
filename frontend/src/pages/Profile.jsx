@@ -25,7 +25,6 @@ import '../styles/Utilities.css';
 function Profile() {
   const { user, logout, isLoggedIn } = useAuth();
   const { language } = useLanguage();
-  const t = translations[language] || translations['en'];
 
   const [history, setHistory] = useState([]);
   const [loading, setLoading] = useState(true);

@@ -60,12 +60,6 @@ function GovernmentSchemes() {
     gu: 'Kevi rIte aavedan karvu?'
   };
 
-  const importantSchemesLabel = {
-    en: 'Important Government Agricultural Schemes',
-    hi: 'महत्वपूर्ण सरकारी कृषि योजनाएं',
-    gu: 'Mahatvapurna sarkari krushi yojanaon'
-  };
-
   const applySteps = {
     en: [
       'Check your eligibility for each scheme on the official website',

@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
 import { 
-  TrendingUp, CircleDollarSign, Calculator, LineChart, 
-  ArrowRight, ShieldAlert, Sparkles, Info, ArrowLeft,
-  PieChart, BarChart3, Wallet, LayoutGrid
+  TrendingUp, Calculator, LineChart, 
+  ShieldAlert, Sparkles,
+  BarChart3, Wallet, LayoutGrid
 } from 'lucide-react';
 import { 
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer 

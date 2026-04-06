@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import translations from '../locales/translations';
-import { Sprout, BarChart3, Droplets, FlaskConical, ScrollText, Wallet, ArrowRight, CheckCircle2, ShieldCheck, Sparkles } from 'lucide-react';
+import { BarChart3, FlaskConical, ScrollText, Wallet, ArrowRight, CheckCircle2, ShieldCheck, Sparkles } from 'lucide-react';
 import '../styles/App.css';
 
 function Home() {

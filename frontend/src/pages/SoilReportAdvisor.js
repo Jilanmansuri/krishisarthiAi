@@ -1,17 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
 import { 
-  TestTube, ArrowUpRight, ArrowDownRight, Leaf, 
-  CircleDollarSign, Lightbulb, CheckCircle, Sprout,
-  MapPin, Phone, Building2, Landmark, ShieldCheck, Sparkles, AlertTriangle, TrendingUp,
-  UploadCloud, FileText, CheckCircle2, Loader2, Info,
-  Camera, ScanLine, Image as ImageIcon, Zap
+  TestTube, ArrowDownRight, 
+  Lightbulb, CheckCircle, Sprout,
+  Phone, Building2, Landmark, ShieldCheck, Sparkles, AlertTriangle, TrendingUp,
+  UploadCloud, CheckCircle2, Loader2,
+  Camera, Image as ImageIcon, Zap
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import translations from '../locales/translations';
 import api from '../services/api';
-import { mapToFormData } from '../utils/soilParser';
 import '../styles/index.css';
 
 function SoilReportAdvisor() {
