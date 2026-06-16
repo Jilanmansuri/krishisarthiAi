@@ -11,6 +11,12 @@ KrishiSaarthi AI is a hackathon-ready farming recommendation system that provide
 - **Location-based Guidance**: Find nearby soil testing labs
 - **Government Schemes**: Information on agricultural benefits and subsidies
 
+---
+
+## 🔗 Live Links
+- **Frontend App (Vercel):** [https://krishi-sarthi-ai.vercel.app](https://krishi-sarthi-ai.vercel.app)
+- **Backend API (Render):** [https://astrax-greentech.onrender.com](https://astrax-greentech.onrender.com)
+---
 ## 🚀 Features
 
 ### Core Features
